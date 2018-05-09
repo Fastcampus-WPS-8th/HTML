@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Basic</h2>
+  <form action="" method="get">
+    <label for="username">ID</label>
+    <input type="text" id="username">
+  </form>
+  
+  <h2>Input types</h2>
+  <!-- input[type=text]#username -->
+  <form action="">
+    <!-- input요소의 'name'속성에 있는 값이 GET요청으로 전달되는 데이터의 키가 된다 -->
+    <input type="text" id="username" name="username">
+    <input type="password" id="password" name="password">
+    <!-- 같은 name값을 가진 input[type=radio]끼리는 중복 선택 불가 -->
+    <input type="radio" id="radio1" name="radio" value="A">
+    <input type="radio" id="radio2" name="radio" value="B">
+    <input type="radio" id="radio3" name="radio" value="C">
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <input type="button" value="버튼">
+    <input type="file" id="file">
+    <input type="submit">
+    <input type="reset">
+    <input type="hidden" value="hiddenValue" id="hidden" name="hidden">
+  </form>
+  
+  <h2>label</h2>
+  <form action="">
+    <label>ID <input type="text"></label>
+  </form>
+  
+  <form action="">
+    <label for="input-username">ID</label>
+    <input type="text" id="input-username">
+  </form>
+  
+  <h2>select</h2>
+  <select name="number" id="select-id">
+    <option value="1">First</option>
+    <option value="2">Second</option>
+    <option value="3">Third</option>
+    <option value="4">Fourth</option>
+  </select>
+  
+  <h2>select multiple</h2>
+  <select name="multiple" 
+    id="select-multiple" size="20" multiple>
+    <option value="1">항목1</option>
+    <option value="2">항목2</option>
+    <option value="3">항목3</option>
+    <option value="4">항목4</option>
+    <option value="5">항목5</option>
+    <option value="6">항목6</option>
+    <option value="7">항목7</option>
+    <option value="8">항목8</option>
+    <option value="9">항목9</option>
+    <option value="10">항목10</option>
+    <option value="11">항목11</option>
+    <option value="12">항목12</option>
+    <option value="13">항목13</option>
+    <option value="14">항목14</option>
+    <option value="15">항목15</option>
+    <option value="16">항목16</option>
+    <option value="17">항목17</option>
+    <option value="18">항목18</option>
+    <option value="19">항목19</option>
+    <option value="20">항목20</option>
+    <option value="21">항목21</option>
+    <option value="22">항목22</option>
+    <option value="23">항목23</option>
+    <option value="24">항목24</option>
+    <option value="25">항목25</option>
+    <option value="26">항목26</option>
+    <option value="27">항목27</option>
+    <option value="28">항목28</option>
+    <option value="29">항목29</option>
+    <option value="30">항목30</option>
+  </select>
+  
+  <h2>optgroup</h2>
+  <select name="" id="">
+    <optgroup label="Fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+    </optgroup>
+    <optgroup label="Colors">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </optgroup>
+  </select>
+  
+  <h2>fieldset, legend</h2>
+  <fieldset>
+    <legend>Login</legend>
+    <label>usenrame: <input type="text"></label>
+    <label>password: <input type="password"></label>
+  </fieldset>
+</body>
+</html>

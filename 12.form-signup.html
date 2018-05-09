@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- input의 힌트 문자열은 'placeholder'속성을 사용 -->
+  <!-- label과 input세트가 한 줄을 차지하려면 div내에 위치하도록 함 -->
+  <form action="">
+    <fieldset>
+      <legend>기본정보</legend>
+      
+      <!-- ID필드 -->
+      <div>
+        <label for="input-id">ID</label>
+        <input type="text" id="input-id" placeholder="특문제외">
+      </div>
+      
+      <!-- 비밀번호 필드 -->
+      <div>
+        <label for="input-password"><b>비밀번호</b></label>
+        <input type="password" id="input-password" placeholder="비밀번호 입력">
+      </div>
+      
+      <div>
+        <label for="input-email">이메일</label>
+        <input type="email" id="input-email">
+      </div>
+      
+      <div>
+        <label for="input-gender">성별</label>
+        <select name="gender" id="input-gender">
+          <option value="m">남성</option>
+          <option value="f">여성</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>선택입력</legend>
+      <div>
+        <label for="input-age">나이</label>
+        <input type="number" max="200" min="0">
+      </div>
+      
+      <div>
+        <label for="input-address">주소</label>
+        <input type="text">
+      </div>
+      
+      <div>
+        <label for="input-intro">자기소개</label>
+      </div>
+      <div>
+        <textarea name="intro" id="input-intro" cols="60" rows="5"></textarea>
+      </div>
+    </fieldset>
+    <button type="submit">회원가입</button>
+    <button type="reset">내용지우기</button>
+  </form>
+</body>
+</html>

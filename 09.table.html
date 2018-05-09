@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 테이블 border 적용을 위한 속성들 */
+    table {
+      /* 테이블의 셀 간 간격을 없앱니다 */
+      border-collapse: collapse;
+      /* 텍스트 가운데 정렬 */
+      text-align: center;
+    }
+    th, td {
+      /* 외곽선을 두께 1px, 실선, #999색상으로 설정 */
+      border: 1px solid #999;
+      /* 내부 여백을 상하4px, 좌우8px로 설정 */
+      padding: 4px 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- table>caption{두 학생의 성적 비교}+thead>tr>th*3^^tbody>(tr>td*3)*2^tfoot>tr>td[colspan=2]+td -->
+  <!--
+    Atom 단축키 보기
+    shift + cmd + p
+    shift + ctrl + p
+  -->
+  <table>
+    <caption>두 학생의 성적 비교</caption>
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>점수</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>철수</td>
+        <td>23세</td>
+        <td>70점</td>
+      </tr>
+      <tr>
+        <td>영희</td>
+        <td>21세</td>
+        <td>89점</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">평균</td>
+        <td>79.5점</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

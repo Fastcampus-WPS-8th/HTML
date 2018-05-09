@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 테이블 border 적용을 위한 속성들 */
+    table {
+      /* 테이블의 셀 간 간격을 없앱니다 */
+      border-collapse: collapse;
+      /* 텍스트 가운데 정렬 */
+      text-align: center;
+    }
+    th, td {
+      /* 외곽선을 두께 1px, 실선, #999색상으로 설정 */
+      border: 1px solid #999;
+      /* 내부 여백을 상하4px, 좌우8px로 설정 */
+      padding: 4px 8px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>피카츄</caption>
+    <thead>
+      <tr>
+        <!-- th[colspan=3]+th*3 -->
+        <th colspan="3">이름</th>
+        <th>도감번호</th>
+        <th>성비</th>
+        <th>타입</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3">세계공통 명칭</td>
+        <td rowspan="2">전국: 025<br>칼로스: 036</td>
+        <td rowspan="2">수컷: 50%<br>암컷: 50%</td>
+        <td rowspan="2">전기</td>
+      </tr>
+      <tr>
+        <td>피카츄</td>
+        <td></td>
+        <td>Pikachu</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
